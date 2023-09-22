@@ -74,6 +74,7 @@ namespace WindowsFormsApp1
             this.pbFoto.Location = new System.Drawing.Point(202, 47);
             this.pbFoto.Name = "pbFoto";
             this.pbFoto.Size = new System.Drawing.Size(229, 209);
+            this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFoto.TabIndex = 3;
             this.pbFoto.TabStop = false;
             // 

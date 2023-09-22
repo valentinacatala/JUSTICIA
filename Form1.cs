@@ -27,16 +27,20 @@ namespace WindowsFormsApp1
             tPro = oProfugos.getData();
 
             lbProfugos.DisplayMember = "nombre";
+            lbProfugos.ValueMember = "id";
             lbProfugos.DataSource = tPro;
         }
 
         private void lbProfugos_SelectedIndexChanged(object sender, EventArgs e)
         {
+            string foto;
+
             foreach (DataRow fPro in tPro.Rows)
             {
-                if (lbProfugos.SelectedIndex!=-1)
+                if (fPro["id"].ToString() == lbProfugos.SelectedValue.ToString())
                 {
-                    
+                    foto = $"{fPro["id"]}.jpg";
+                    pbFoto.Load($"C:\\Users\\Alumno\\source\\repos\\WindowsFormsApp1\\bin\\Debug\\fotos\\{foto}");
                 }
             }
         }
