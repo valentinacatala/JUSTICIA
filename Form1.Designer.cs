@@ -43,27 +43,31 @@ namespace WindowsFormsApp1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 21);
+            this.label1.Location = new System.Drawing.Point(17, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(83, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "PROFUGOS";
             // 
             // lbProfugos
             // 
             this.lbProfugos.FormattingEnabled = true;
-            this.lbProfugos.Location = new System.Drawing.Point(13, 47);
+            this.lbProfugos.ItemHeight = 16;
+            this.lbProfugos.Location = new System.Drawing.Point(13, 58);
+            this.lbProfugos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbProfugos.Name = "lbProfugos";
-            this.lbProfugos.Size = new System.Drawing.Size(170, 342);
+            this.lbProfugos.Size = new System.Drawing.Size(225, 420);
             this.lbProfugos.TabIndex = 1;
             this.lbProfugos.SelectedIndexChanged += new System.EventHandler(this.lbProfugos_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(208, 21);
+            this.label2.Location = new System.Drawing.Point(277, 26);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "FOTO";
             // 
@@ -71,9 +75,10 @@ namespace WindowsFormsApp1
             // 
             this.pbFoto.BackColor = System.Drawing.Color.White;
             this.pbFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbFoto.Location = new System.Drawing.Point(202, 47);
+            this.pbFoto.Location = new System.Drawing.Point(269, 58);
+            this.pbFoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbFoto.Name = "pbFoto";
-            this.pbFoto.Size = new System.Drawing.Size(229, 209);
+            this.pbFoto.Size = new System.Drawing.Size(305, 257);
             this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFoto.TabIndex = 3;
             this.pbFoto.TabStop = false;
@@ -81,9 +86,10 @@ namespace WindowsFormsApp1
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(202, 275);
+            this.label3.Location = new System.Drawing.Point(269, 338);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.Size = new System.Drawing.Size(44, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "ALIAS";
             // 
@@ -92,18 +98,20 @@ namespace WindowsFormsApp1
             this.lblAlias.BackColor = System.Drawing.Color.Black;
             this.lblAlias.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAlias.ForeColor = System.Drawing.Color.Yellow;
-            this.lblAlias.Location = new System.Drawing.Point(202, 299);
+            this.lblAlias.Location = new System.Drawing.Point(269, 368);
+            this.lblAlias.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAlias.Name = "lblAlias";
-            this.lblAlias.Size = new System.Drawing.Size(229, 23);
+            this.lblAlias.Size = new System.Drawing.Size(305, 28);
             this.lblAlias.TabIndex = 5;
             this.lblAlias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(202, 343);
+            this.label5.Location = new System.Drawing.Point(269, 422);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 13);
+            this.label5.Size = new System.Drawing.Size(124, 16);
             this.label5.TabIndex = 6;
             this.label5.Text = "PROFUGO DESDE";
             // 
@@ -112,17 +120,18 @@ namespace WindowsFormsApp1
             this.lblFecha.BackColor = System.Drawing.Color.Black;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.Yellow;
-            this.lblFecha.Location = new System.Drawing.Point(202, 367);
+            this.lblFecha.Location = new System.Drawing.Point(269, 452);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(229, 23);
+            this.lblFecha.Size = new System.Drawing.Size(305, 28);
             this.lblFecha.TabIndex = 7;
             this.lblFecha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(455, 412);
+            this.ClientSize = new System.Drawing.Size(607, 507);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblAlias);
@@ -131,6 +140,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbProfugos);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "PROFUGOS DE LA JUSTICIA";
             this.Load += new System.EventHandler(this.Form1_Load);
