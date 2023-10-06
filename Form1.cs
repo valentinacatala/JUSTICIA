@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp1
 {
@@ -33,16 +35,22 @@ namespace WindowsFormsApp1
 
         private void lbProfugos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string foto;
+            //string foto;
+            //foreach (DataRow fPro in tPro.Rows)
+            //{
+            //    if (fPro["id"].ToString() == lbProfugos.SelectedValue.ToString())
+            //    {
+            //        foto = $"{fPro["id"]}.jpg";
+            //        pbFoto.Load($"C:\\Users\\Alumno\\source\\repos\\WindowsFormsApp1\\bin\\Debug\\fotos\\{foto}");
+            //    }
+            //}
 
-            foreach (DataRow fPro in tPro.Rows)
-            {
-                if (fPro["id"].ToString() == lbProfugos.SelectedValue.ToString())
-                {
-                    foto = $"{fPro["id"]}.jpg";
-                    pbFoto.Load($"C:\\Users\\Alumno\\source\\repos\\WindowsFormsApp1\\bin\\Debug\\fotos\\{foto}");
-                }
-            }
+            DataRow fila = tPro.Rows.Find(lbProfugos.SelectedValue);
+
+            lblAlias.Text = fila["alias"].ToString();
+            DateTime fecha = Convert.ToDateTime(fila["profugo_desde"]);
+            lblFecha.Text = fecha.ToString("dd-MM-yyyy");
+            pbFoto.Load(fila["foto"].ToString());
         }
     }
 }

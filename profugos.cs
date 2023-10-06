@@ -27,6 +27,10 @@ namespace WindowsFormsApp1
             comando.CommandText = "Profugos";
 
             adaptador.Fill(tabla);
+
+            DataColumn[] vec = new DataColumn[1];
+            vec[0] = tabla.Columns["id"];
+            tabla.PrimaryKey = vec;
         }
         public DataTable getData()
         {
